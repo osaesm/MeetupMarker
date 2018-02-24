@@ -18,7 +18,7 @@
             android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/profPic"
                 android:layout_width="211dp"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="FIRST_NAME" />
+                    android:hint="@string/first_name" />
 
                 <EditText
                     android:id="@+id/lastName"
@@ -47,31 +47,31 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="LAST_NAME" />
+                    android:hint="@string/last_name" />
             </LinearLayout>
 
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/bio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="DESCRIPTION" />
+            android:inputType="textMultiLine"
+            android:hint="@string/description"
+            android:gravity="bottom"/>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EDIT/DONE" />
+            android:text="@string/done" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SIGN OUT" />
-
+            android:text="@string/log_out" />
     </LinearLayout>
 </FrameLayout>

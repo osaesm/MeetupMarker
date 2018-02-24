@@ -10,7 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 
 //public class ProfileFragment extends Fragment {
@@ -28,7 +31,7 @@ import android.widget.TextView;
 public class ProfileFragment extends Fragment {
 
     TextView firstName_, lastName_;
-    ImageButton profPic;
+    ImageView profPic;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -37,9 +40,10 @@ public class ProfileFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_profile, container, false);
         firstName_ = (TextView) v.findViewById(R.id.firstName);
         lastName_ = (TextView) v.findViewById(R.id.lastName);
-        profPic = (ImageButton) v.findViewById(R.id.profPic);
+        profPic = (ImageView) v.findViewById(R.id.profPic);
         setFirstName_(nav.firstName);
         setLastName_(nav.lastName);
+        setImg(nav.profile_picture_url);
 
         return v;
 
@@ -56,7 +60,9 @@ public class ProfileFragment extends Fragment {
     }
 
     public void setImg(String profPicURL){
-
+        Picasso.with(getContext())
+                .load(profPicURL)
+                .into(profPic);
     }
 
 
