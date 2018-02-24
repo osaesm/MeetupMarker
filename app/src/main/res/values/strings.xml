@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Meetup Marker</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_map">Map</string>
+    <string name="title_add_event">+</string>
 </resources>
