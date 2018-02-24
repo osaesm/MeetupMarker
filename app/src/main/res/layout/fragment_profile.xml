@@ -18,8 +18,8 @@
             android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView2"
+            <ImageButton
+                android:id="@+id/profPic"
                 android:layout_width="211dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -34,7 +34,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/firstName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -42,7 +42,7 @@
                     android:text="FIRST_NAME" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/lastName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
