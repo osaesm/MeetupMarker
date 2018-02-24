@@ -3,7 +3,10 @@
     <string name="title_activity_events">Events</string>
     <string name="title_profile">Profile</string>
     <string name="title_map">Map</string>
-    <string name="title_add_event">+</string>
+    <string name="title_add_event">Event</string>
     <string name="facebook_app_id">160914118040240</string>
     <string name="facebook_login_protocol_scheme">fb160914118040240</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

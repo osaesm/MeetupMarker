@@ -80,22 +80,24 @@ public class LoginActivity extends AppCompatActivity {
                             URL profile_picture = new URL("https://graph.facebook.com/"+object.getString("id")+"/picture?width=250&height=250");
                             profile_picture_url = profile_picture.toString();
 
-                            String url = "https://blahblah.com/is_registered?id=" + id;
-                            StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-                                @Override
-                                public void onResponse(String response) {
-                                    if(response.equals("true")) {
-                                        updateUI(false);
-                                    } else {
-                                        updateUI(true);
-                                    }
-                                }
-                            }, new Response.ErrorListener() {
-                                @Override
-                                public void onErrorResponse(VolleyError error) {
+                            updateUI(true);
 
-                                }
-                            });
+//                            String url = "https://blahblah.com/is_registered?id=" + id;
+//                            StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+//                                @Override
+//                                public void onResponse(String response) {
+//                                    if(response.equals("true")) {
+//                                        updateUI(true);
+//                                    } else {
+//                                        updateUI(false);
+//                                    }
+//                                }
+//                            }, new Response.ErrorListener() {
+//                                @Override
+//                                public void onErrorResponse(VolleyError error) {
+//
+//                                }
+//                            });
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -130,16 +132,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void updateUI(boolean toMap) {
-        Intent i;
+        Intent i = new Intent(LoginActivity.this, Events.class);
 
-        if (toMap) {
-            i = new Intent(LoginActivity.this, ProfileActivity.class);
-        } else {
-            i = new Intent(LoginActivity.this, MapActivity.class);
-        }
+        i.putExtra("to map", toMap);
 
         if(profile_picture_url == null) {
-            i.putExtra("photot url", "https://support.plymouth.edu/kb_images/Yammer/default.jpeg");
+            i.putExtra("photo url", "https://support.plymouth.edu/kb_images/Yammer/default.jpeg");
         } else {
             i.putExtra("photo url", profile_picture_url);
         }
