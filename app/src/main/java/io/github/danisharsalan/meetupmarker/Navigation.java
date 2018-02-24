@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class Events extends AppCompatActivity {
+public class Navigation extends AppCompatActivity {
 
     String firstName, lastName, email, profile_picture_url, id;
 

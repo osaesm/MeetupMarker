@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Events"
+            android:name=".Navigation"
             android:label="@string/title_activity_events" />
         <activity android:name=".LoginActivity"></activity>
     </application>

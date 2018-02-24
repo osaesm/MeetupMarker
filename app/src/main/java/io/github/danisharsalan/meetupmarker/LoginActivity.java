@@ -2,20 +2,11 @@ package io.github.danisharsalan.meetupmarker;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -132,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void updateUI(boolean toMap) {
-        Intent i = new Intent(LoginActivity.this, Events.class);
+        Intent i = new Intent(LoginActivity.this, Navigation.class);
 
         i.putExtra("to map", toMap);
 
