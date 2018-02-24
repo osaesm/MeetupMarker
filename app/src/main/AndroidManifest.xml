@@ -2,12 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.danisharsalan.meetupmarker">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +23,8 @@
         </activity>
         <activity
             android:name=".Events"
-            android:label="@string/title_activity_events"></activity>
+            android:label="@string/title_activity_events" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
