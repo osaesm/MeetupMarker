@@ -39,6 +39,6 @@ Please read [License.md](LICENSE.md)
 * Filter events based off of user preference
 * Set profile filled-out requirements
 * Add more event choices
-* Delete events before they occur
+* Option to delete events
 * Roster feature to allow user to see who joined
 * Group chat feature for users part of an event
