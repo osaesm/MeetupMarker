@@ -29,3 +29,4 @@ Please read [License.md](LICENSE.md)
 * Filter events based off of user preference
 * Set profile filled-out requirements
 * Add more event choices
+* Be able to delete events
