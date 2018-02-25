@@ -2,12 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.danisharsalan.meetupmarker.EventFragment">
+    tools:context="io.github.danisharsalan.meetupmarker.eventType">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="in EVENT Fragment" />
 
+    <ListView
+        android:id="@+id/eventsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 </FrameLayout>
