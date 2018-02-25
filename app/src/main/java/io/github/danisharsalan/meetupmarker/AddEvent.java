@@ -58,7 +58,7 @@ public class AddEvent extends Fragment {
         mLayout.addView(createNewTextView("Tennis"));
         mLayout.addView(createNewTextView("Work out"));
 
-        number = getView().findViewById(R.id.number);
+        number = (EditText) ll.findViewById(R.id.number);
 
         number.setText("1");
 
@@ -103,6 +103,7 @@ public class AddEvent extends Fragment {
                         tvTemp.setTextColor(getResources().getColor(R.color.black));
 
                         chosenSport = (String)(tvTemp.getText());
+                        // OPEN MAP SHOWING CHOSEN SPORTS AND ALSO CREATE EVENT FOR DB
                     }
                 }, 100);
             }

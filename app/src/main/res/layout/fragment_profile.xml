@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.danisharsalan.meetupmarker.ProfileFragment">
+    tools:context="io.github.danisharsalan.meetupmarker.ProfileFragment"
+    android:background="@color/colorPrimaryDark">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -16,13 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
 
             <ImageView
                 android:id="@+id/profPic"
                 android:layout_width="211dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_margin="5dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
                 android:src="@mipmap/ic_launcher" />
@@ -37,17 +41,29 @@
                     android:id="@+id/firstName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/cardview_dark_background"
                     android:ems="10"
+                    android:hint="@string/first_name"
                     android:inputType="textPersonName"
-                    android:hint="@string/first_name" />
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary" />
 
                 <EditText
                     android:id="@+id/lastName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/cardview_dark_background"
                     android:ems="10"
+                    android:hint="@string/last_name"
                     android:inputType="textPersonName"
-                    android:hint="@string/last_name" />
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
 
         </LinearLayout>
@@ -56,22 +72,53 @@
             android:id="@+id/bio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="20dp"
+            android:background="@color/cardview_dark_background"
             android:ems="10"
-            android:inputType="textMultiLine"
+            android:gravity="top"
             android:hint="@string/description"
-            android:gravity="bottom"/>
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:id="@+id/doneBtn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/done" />
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:background="?attr/colorButtonNormal"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/done"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/log_out" />
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="?attr/colorButtonNormal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/log_out"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
     </LinearLayout>
 </FrameLayout>

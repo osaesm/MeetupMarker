@@ -24,7 +24,7 @@ public class Navigation extends AppCompatActivity {
                     loadFragment(new ProfileFragment());
                     return true;
                 case R.id.navigation_map:
-            //        loadFragment(new MapActivityFragment());
+                    loadFragment(new MapActivityFragment());
                     return true;
                 case R.id.navigation_add_event:
                     loadFragment(new AddEvent());
@@ -34,7 +34,7 @@ public class Navigation extends AppCompatActivity {
         }
     };
 
-    private void loadFragment(Fragment fragment) {
+    public void loadFragment(Fragment fragment) {
         if(fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
@@ -61,7 +61,7 @@ public class Navigation extends AppCompatActivity {
         if(toMap) {
             navigation.setSelectedItemId(R.id.navigation_profile);
         } else {
-            navigation.setSelectedItemId(R.id.navigation_map);
+            navigation.setSelectedItemId(R.id.navigation_add_event);
         }
     }
 
