@@ -27,7 +27,7 @@ public class Navigation extends AppCompatActivity {
                     loadFragment(new MapActivityFragment());
                     return true;
                 case R.id.navigation_add_event:
-                    loadFragment(new EventFragment());
+                    startActivity(new Intent(Navigation.this, makeEvent.class));
                     return true;
             }
             return false;
