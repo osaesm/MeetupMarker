@@ -75,6 +75,7 @@ public class AddEvent extends Fragment {
         return ll;
     }
 
+
     private TextView createNewTextView(String text){
         final LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         final TextView textView = new TextView((getActivity()));
