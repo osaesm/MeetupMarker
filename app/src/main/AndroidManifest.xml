@@ -2,24 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.danisharsalan.meetupmarker">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET"/>
-=======
-    <uses-permission android:name="android.permission.INTERNET" />
->>>>>>> c9a53d3e264a610407ddb98bdd98522539fd4d32
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/lifting"
-        android:label="@string/app_name"
-        android:roundIcon="@drawable/lifting"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
 
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -31,24 +27,11 @@
         <activity
             android:name=".Navigation"
             android:label="@string/title_activity_events" />
-<<<<<<< HEAD
         <activity android:name=".LoginActivity"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDzOtHMMwSVLDtuCdC2gbG869_zRmJ3JAk"/>
-=======
-        <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".makeEvent"
-            android:label="@string/title_activity_make_event"
-            android:parentActivityName=".Navigation"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.github.danisharsalan.meetupmarker.Navigation" />
-        </activity>
->>>>>>> c9a53d3e264a610407ddb98bdd98522539fd4d32
     </application>
 
 </manifest>
