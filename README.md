@@ -27,3 +27,5 @@ Please read [License.md](LICENSE.md)
 ## Roadmap
 * Set start and end times for events
 * Filter events based off of user preference
+* Set profile filled-out requirements
+* Add more event choices
