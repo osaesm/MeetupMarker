@@ -46,7 +46,7 @@ public class MapActivityFragment extends Fragment {
                 googleMap = mMap;
 
                 // For showing a move to my location button
-                //googleMap.setMyLocationEnabled(true);
+               // googleMap.setMyLocationEnabled(true);
 
                 // For dropping a marker at a point on the Map
                 LatLng champaign = new LatLng(40, 88);
