@@ -24,10 +24,10 @@ public class Navigation extends AppCompatActivity {
                     loadFragment(new ProfileFragment());
                     return true;
                 case R.id.navigation_map:
-                    loadFragment(new MapActivityFragment());
+            //        loadFragment(new MapActivityFragment());
                     return true;
                 case R.id.navigation_add_event:
-                    startActivity(new Intent(Navigation.this, makeEvent.class));
+                    loadFragment(new AddEvent());
                     return true;
             }
             return false;

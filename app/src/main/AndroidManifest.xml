@@ -26,15 +26,6 @@
             android:name=".Navigation"
             android:label="@string/title_activity_events" />
         <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".makeEvent"
-            android:label="@string/title_activity_make_event"
-            android:parentActivityName=".Navigation"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.github.danisharsalan.meetupmarker.Navigation" />
-        </activity>
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@
     <string name="description">Description</string>
     <string name="done">Done</string>
     <string name="log_out">Log out</string>
-    <string name = "google_maps_API_key">AIzaSyDzOtHMMwSVLDtuCdC2gbG869_zRmJ3JAk</string>
+    <string name="google_maps_API_key">AIzaSyDzOtHMMwSVLDtuCdC2gbG869_zRmJ3JAk</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_make_event">makeEvent</string>
@@ -19,4 +19,5 @@
     <string name="number"># of People</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="basketball">Basketball</string>
 </resources>
