@@ -1,6 +1,6 @@
 # MeetupMarker [![Travis branch](https://img.shields.io/travis/rust-lang/rust/master.svg)]() [![AUR](https://img.shields.io/badge/License-GPL----3-green.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/AFNetworking.svg)]
 
-MeetupMarker is designed to brinkg people together, whether it be in Urbana-Champaign or the suburbs of Chicago. The app allows for people to make friends and meet by joining up for various sports (and other social activities) in the future.
+MeetupMarker is designed to bring people together, whether it be in Urbana-Champaign or the suburbs of Chicago. The app allows for people to make friends and meet by joining up for various sports (and other social activities) in the future.
 
 ## Usage
 #### RESTful API
@@ -39,3 +39,6 @@ Please read [License.md](LICENSE.md)
 * Filter events based off of user preference
 * Set profile filled-out requirements
 * Add more event choices
+* Delete events before they occur
+* Roster feature to allow user to see who joined
+* Group chat feature for users part of an event
