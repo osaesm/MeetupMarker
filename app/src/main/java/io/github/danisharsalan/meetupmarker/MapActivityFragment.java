@@ -1,6 +1,7 @@
 package io.github.danisharsalan.meetupmarker;
 
 import android.content.Context;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -87,5 +88,13 @@ public class MapActivityFragment extends Fragment {
         mMapView.onLowMemory();
     }
 
+    public void setMarker(Location location, AddEvent event){
+        double lat = location.getLatitude();
+        double lon = location.getLongitude();
+
+        googleMap.addMarker(new MarkerOptions()
+                .position(new LatLng(lat, lon))
+                .title("Event"));
+    }
 
 }
