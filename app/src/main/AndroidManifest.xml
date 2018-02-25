@@ -28,10 +28,13 @@
             android:name=".Navigation"
             android:label="@string/title_activity_events" />
         <activity android:name=".LoginActivity"></activity>
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDzOtHMMwSVLDtuCdC2gbG869_zRmJ3JAk"/>
     </application>
 
+<<<<<<< HEAD
     </manifest>
+=======
+</manifest>
+>>>>>>> a8719fed5c6ff11825ec17e51cde4c33dbed8afa
