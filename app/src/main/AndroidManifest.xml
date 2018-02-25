@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.danisharsalan.meetupmarker">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -26,6 +28,10 @@
             android:name=".Navigation"
             android:label="@string/title_activity_events" />
         <activity android:name=".LoginActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDzOtHMMwSVLDtuCdC2gbG869_zRmJ3JAk"/>
     </application>
 
 </manifest>
